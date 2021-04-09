@@ -7,7 +7,7 @@
 
 body{
  height: 100vh;
- background: linear-gradient(180deg, #009688 13%, #D8DBD5 13%);
+ background: linear-gradient(180deg, #009688 13%, grey 13%);
 
 }
 
@@ -37,6 +37,9 @@ body{
   background-color: lightblue;
   background-image: url(../img/sfondo-chat.png);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .my-image{
@@ -94,10 +97,18 @@ body{
 
 }
 
-.input{
+.input-search{
   height: 7%;
   width: 100%;
   background-color: #D8DBD5;
+
+}
+
+.input-search input{
+  width:90%;
+  border: 0;
+  border-radius: 10px;
+  padding: 4px;
 
 }
 
@@ -168,12 +179,22 @@ body{
   height: 8%;
   width: 100%;
   background-color: #D8DBD5;
-  border-left: 1px solid grey;
+  border-left: 1px solid lightgrey;
 }
 
 .text-lower{
-  height: 8%;
+  height: 10%;
   width: 100%;
   background-color: #D8DBD5;
-  border-left: 1px solid grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.input-text-lower{
+  width: 80%;
+  border-radius:  10px;
+  border: 0;
+  padding: 5px;
 }
