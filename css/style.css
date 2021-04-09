@@ -22,18 +22,21 @@ body{
   width: 80%;
   /* background-color: white; */
   display: flex;
+
 }
 
 .chat-left{
   height: 100%;
   width: 33%;
-  background-color: yellow;
+  background-color: white;
 }
 
 .text-chat{
   height: 100%;
   width: 67%;
   background-color: lightblue;
+  background-image: url(../img/sfondo-chat.png);
+  background-size: cover;
 }
 
 .my-image{
@@ -44,6 +47,7 @@ body{
 
 
 }
+
 
 .container-photo{
   height: 100%;
@@ -82,11 +86,11 @@ body{
 }
 
 .campanella{
-  height: 73%;
-  width: 16%;
+  height: 70%;
+  width: 13%;
   background-color: white;
   border-radius: 100%;
-  margin-right: 40px;
+  margin-right: 60px;
 
 }
 
@@ -94,34 +98,54 @@ body{
   height: 7%;
   width: 100%;
   background-color: #D8DBD5;
+
 }
 
- .single-chat{
+/* .single-chat{
   height:15%;
   width: 100%;
   background-color: green;
 
-}
+} */
 
 .scroll-bar{
   height: 75%;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
   overflow-y: scroll;
 }
 
-.container-img{
- height: 100%;
- width: 30%;
- background-color: white;
+
+.single-chat-1{
+  height:15%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
-.chat-img{
-  height: 72%;
-  width: 50%;
-  background-color: white;
+
+
+.box-img{
+  height: 76%;
+  width: 15%;
+  background-color: red;
   border-radius: 100%;
+}
+
+.week-day {
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.name-chat{
+  margin-right: 70px;
+}
+
+.single-chat-1:hover{
+  background-color: #D8DBD5;
 }
 
 .img-profile{
@@ -129,25 +153,27 @@ body{
   background-size: cover;
 }
 
-
-.chat-name{
-  height: 100%;
-  width: 45%;
-  background-color: white;
-  padding-top: 15px;
-  border-bottom: 1px solid grey;
-
+.flex-border{
+  display: flex;
+  justify-content: flex-end;
+}
+.border{
+  height: 1px;
+  width: 80%;
+  border: 1px solid lightgrey;
+  float: left;
 }
 
-
-.day-week{
-  height: 100%;
-  width: 25%;
-   background-color: white;
-  padding-top: 15px;
-  border-bottom: 1px solid grey;
-}
-
-.hover:hover{
+.text-higher{
+  height: 8%;
+  width: 100%;
   background-color: #D8DBD5;
+  border-left: 1px solid grey;
+}
+
+.text-lower{
+  height: 8%;
+  width: 100%;
+  background-color: #D8DBD5;
+  border-left: 1px solid grey;
 }
