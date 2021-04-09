@@ -1,0 +1,115 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+
+}
+
+body{
+ height: 100vh;
+ background: linear-gradient(180deg, #009688 13%, #D8DBD5 13%);
+
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-chat{
+  height: 90%;
+  width: 70%;
+  /* background-color: white; */
+  display: flex;
+}
+
+.chat-left{
+  height: 100%;
+  width: 30%;
+  background-color: yellow;
+}
+
+.text-chat{
+  height: 100%;
+  width: 70%;
+  background-color: lightblue;
+}
+
+.my-image{
+  height: 8%;
+  width: 100%;
+  background-color: #D8DBD5;
+  display: flex;
+
+
+}
+
+.container-photo{
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+
+}
+
+.container-photo .photo{
+  height: 78%;
+  width: 29%;
+  /* background-color: green; */
+  border-radius: 100%;
+  background-image: url(../img/IMG_4906.jpg);
+  background-size: cover;
+}
+.container-icons{
+  height: 100%;
+  width: 50%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.photo{
+  height: 100%;
+  width: 50%;
+  background-color: red;
+}
+
+.notified{
+  height: 10%;
+  width: 100%;
+  background-color: #8BD6FD;
+}
+
+.campanella{
+  height: 73%;
+  width: 16%;
+  background-color: white;
+  border-radius: 100%;
+  margin-right: 20px;
+
+}
+
+.input{
+  height: 7%;
+  width: 100%;
+  background-color: #D8DBD5;
+}
+
+ .single-chat{
+  height:15%;
+  width: 100%;
+  background-color: green;
+  border-bottom: 1px solid white;
+}
+ .scroll-bar{
+   height: 75%;
+   width: 100%;
+   background-color: red;
+   overflow-y: scroll;
+ }
