@@ -19,20 +19,20 @@ body{
 
 .box-chat{
   height: 90%;
-  width: 70%;
+  width: 80%;
   /* background-color: white; */
   display: flex;
 }
 
 .chat-left{
   height: 100%;
-  width: 30%;
+  width: 33%;
   background-color: yellow;
 }
 
 .text-chat{
   height: 100%;
-  width: 70%;
+  width: 67%;
   background-color: lightblue;
 }
 
@@ -48,22 +48,23 @@ body{
 .container-photo{
   height: 100%;
   width: 50%;
-  /* background-color: red; */
+   /* background-color: red; */
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 20px;
 
 
 }
 
 .container-photo .photo{
-  height: 78%;
-  width: 29%;
+  height: 85%;
+  width: 26%;
   /* background-color: green; */
   border-radius: 100%;
   background-image: url(../img/IMG_4906.jpg);
   background-size: cover;
 }
+
 .container-icons{
   height: 100%;
   width: 50%;
@@ -73,12 +74,6 @@ body{
   align-items: center;
 }
 
-
-.photo{
-  height: 100%;
-  width: 50%;
-  background-color: red;
-}
 
 .notified{
   height: 10%;
@@ -91,7 +86,7 @@ body{
   width: 16%;
   background-color: white;
   border-radius: 100%;
-  margin-right: 20px;
+  margin-right: 40px;
 
 }
 
@@ -105,11 +100,54 @@ body{
   height:15%;
   width: 100%;
   background-color: green;
-  border-bottom: 1px solid white;
+
 }
- .scroll-bar{
-   height: 75%;
-   width: 100%;
-   background-color: red;
-   overflow-y: scroll;
- }
+
+.scroll-bar{
+  height: 75%;
+  width: 100%;
+  background-color: red;
+  overflow-y: scroll;
+}
+
+.container-img{
+ height: 100%;
+ width: 30%;
+ background-color: white;
+
+}
+
+.chat-img{
+  height: 72%;
+  width: 50%;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.img-profile{
+  background-image: url(../img/IMG_4906.jpg);
+  background-size: cover;
+}
+
+
+.chat-name{
+  height: 100%;
+  width: 45%;
+  background-color: white;
+  padding-top: 15px;
+  border-bottom: 1px solid grey;
+
+}
+
+
+.day-week{
+  height: 100%;
+  width: 25%;
+   background-color: white;
+  padding-top: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.hover:hover{
+  background-color: #D8DBD5;
+}
