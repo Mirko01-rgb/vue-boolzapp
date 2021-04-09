@@ -146,6 +146,12 @@ body{
   border-radius: 100%;
 }
 
+ img{
+  width: 16%;
+  height: 77%;
+  border-radius: 100%;
+}
+
 .week-day {
   margin-bottom: 20px;
   color: grey;
@@ -159,10 +165,7 @@ body{
   background-color: #D8DBD5;
 }
 
-.img-profile{
-  background-image: url(../img/IMG_4906.jpg);
-  background-size: cover;
-}
+
 
 .flex-border{
   display: flex;
