@@ -31,15 +31,17 @@ body{
   background-color: white;
 }
 
+ul{
+  list-style: none;
+}
 .text-chat{
   height: 100%;
   width: 67%;
   background-color: lightblue;
   background-image: url(../img/sfondo-chat.png);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  position: relative;
+
 }
 
 .my-image{
@@ -112,12 +114,6 @@ body{
 
 }
 
-/* .single-chat{
-  height:15%;
-  width: 100%;
-  background-color: green;
-
-} */
 
 .scroll-bar{
   height: 75%;
@@ -125,6 +121,7 @@ body{
   /* background-color: red; */
   overflow-y: scroll;
 }
+
 
 
 .single-chat-1{
@@ -147,9 +144,11 @@ body{
 }
 
  img{
-  width: 16%;
-  height: 77%;
+  width: 60px;
+  height: 60px;
+
   border-radius: 100%;
+  margin: 8px 0;
 }
 
 .week-day {
@@ -161,37 +160,38 @@ body{
   margin-right: 70px;
 }
 
+
 .single-chat-1:hover{
   background-color: #D8DBD5;
 }
 
-
-
-.flex-border{
-  display: flex;
-  justify-content: flex-end;
-}
-.border{
-  height: 1px;
-  width: 80%;
-  border: 1px solid lightgrey;
-  float: left;
+.clearfix::after{
+  display: table;
+  content: '';
+  clear: both;
 }
 
-.text-higher{
+.chat ul{
+  width: 100%;
+}
+
+.board-text-higher{
   height: 8%;
   width: 100%;
   background-color: #D8DBD5;
   border-left: 1px solid lightgrey;
 }
 
-.text-lower{
+.board-text-lower{
   height: 10%;
   width: 100%;
   background-color: #D8DBD5;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 0;
+  position: absolute;
+  bottom:0;
 
 }
 
@@ -200,4 +200,26 @@ body{
   border-radius:  10px;
   border: 0;
   padding: 5px;
+}
+
+
+.destinatario{
+  background-color:white;
+  padding: 15px;
+  min-height: 40px;
+  border-radius: 12px;
+  float: left;
+  clear: both;
+  margin: 10px 20px;
+}
+
+.mittente{
+  float: right;
+  clear: both;
+  background-color: #dcf8c6;
+  padding: 15px;
+  min-height: 40px;
+  border-radius: 12px;
+  margin-right: 20px;
+
 }

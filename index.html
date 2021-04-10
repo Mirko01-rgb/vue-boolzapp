@@ -38,7 +38,7 @@
                 <i class="fas fa-bell-slash" style="color:lightgrey"></i>
 
               </div>
-              <div class="">
+              <div >
                 <h4 style="color:grey">Get notified of new messages</h4>
                 <p style="color:grey" style="">notifications are muted</p>
               </div>
@@ -53,24 +53,28 @@
 
             <!-- Scrollbar con tutte le chat -->
             <div class="scroll-bar">
+              <ul>
+                <li>
+                  <div  class="single-chat-1 ">
+                    <img :src='img[0]' alt="foto">
+                    <div class="name-chat">
 
-              <div  class="single-chat-1 ">
+                      <p>Mario Rossi</p>
 
-                <img :src='img[0]' alt="foto">
-                <div class="name-chat">
+                      <p style="color:grey">ahahah</p>
+                    </div>
 
-                  <p>Mario Rossi</p>
+                    <p class="week-day">today</p>
 
-                  <p style="color:grey">ahahah</p>
-                </div>
 
-                <p class="week-day">today</p>
+                  </div>
 
-              </div>
+                </li>
 
-              <div class="flex-border">
-                <div class="border"></div>
-              </div>
+
+              </ul>
+
+
 
             </div>
           </div>
@@ -80,15 +84,18 @@
           <div class="text-chat ">
 
             <!-- Bordo grigio superiore della chat -->
-            <div class="text-higher"></div>
+            <div class="board-text-higher"></div>
 
-            <div class="text">
-
-
+            <div class="chat">
+              <ul class="clearfix">
+                <li class="destinatario">Ciao</li>
+                <li class="mittente">Come stai?</li>
+                <li class="destinatario">Bene, tu?</li>
+              </ul>
             </div>
 
             <!-- Bordo grigio inferiore della chat con input-text  -->
-            <div class="text-lower">
+            <div class="board-text-lower">
               <i style="color:grey" class="far fa-grin-alt"></i>
               <input class="input-text-lower" type="text" placeholder="Type a message">
               <i style="color:grey" class="fas fa-microphone"></i>
@@ -96,7 +103,7 @@
             </div>
 
 
-        </div>
+          </div>
 
         </div>
 
