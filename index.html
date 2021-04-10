@@ -54,9 +54,9 @@
             <!-- Scrollbar con tutte le chat -->
             <div class="scroll-bar">
               <ul>
-               <li v-for = "item in contacts">   <!-- item = i 4 oggetti dell'array C  -->
+               <li v-for = "item in contacts">   <!-- item = i 4 oggetti dell'array CONTACTS  -->
                   <div  class="single-chat-1 clearfix">
-                    <img :src='img[0]' alt="foto">
+                    <img :src='item.imagines' alt="foto">
                     <div class="name-chat">
 
                       <p>{{item.name}}</p>

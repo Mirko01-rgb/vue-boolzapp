@@ -7,6 +7,7 @@ function initVue(){
             name: 'Michele',
             avatar: '_1',
             visible: true,
+            imagines:'./img/michele.jpg',
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
@@ -31,6 +32,7 @@ function initVue(){
             name: 'Fabio',
             avatar: '_2',
             visible: true,
+            imagines: './img/fabio.jpg' ,
             messages: [
                 {
                     date: '20/03/2020 16:30:00',
@@ -55,6 +57,7 @@ function initVue(){
             name: 'Samuele',
             avatar: '_3',
             visible: true,
+            imagines:'./img/samuele.jpg',
             messages: [
                 {
                     date: '28/03/2020 10:10:40',
@@ -79,6 +82,7 @@ function initVue(){
             name: 'Luisa',
             avatar: '_4',
             visible: true,
+            imagines:  './img/Luisa.jpg',
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
@@ -94,15 +98,10 @@ function initVue(){
             ],
         },
     ],
-    img: ['./img/IMG_4906.JPG']
-
-
-   },
-   methods:{
-
 
 
   },
+
 
 
 
