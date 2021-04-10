@@ -54,17 +54,17 @@
             <!-- Scrollbar con tutte le chat -->
             <div class="scroll-bar">
               <ul>
-                <li>
-                  <div  class="single-chat-1 ">
+               <li v-for = "item in contacts">   <!-- item = i 4 oggetti dell'array C  -->
+                  <div  class="single-chat-1 clearfix">
                     <img :src='img[0]' alt="foto">
                     <div class="name-chat">
 
-                      <p>Mario Rossi</p>
+                      <p>{{item.name}}</p>
 
-                      <p style="color:grey">ahahah</p>
+                     <p class="message-under-name">{{item.messages[1].text}}</p>    <!--  -->
                     </div>
 
-                    <p class="week-day">today</p>
+                    <p class="hour">{{item.messages[1].hour}}</p>
 
 
                   </div>

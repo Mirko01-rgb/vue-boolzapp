@@ -128,37 +128,46 @@ ul{
   height:15%;
   width: 100%;
   background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  border: 1px solid lightgrey;
+
 
 }
 
 
 
-.box-img{
-  height: 76%;
-  width: 15%;
-  background-color: red;
+img{
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
-}
+  margin: 8px 10px;
+  float: left;
 
- img{
-  width: 60px;
-  height: 60px;
 
-  border-radius: 100%;
-  margin: 8px 0;
-}
-
-.week-day {
-  margin-bottom: 20px;
-  color: grey;
 }
 
 .name-chat{
-  margin-right: 70px;
+  margin: 15px 0;
+  float: left;
+
+
 }
+
+.message-under-name{
+  margin-top: 5px;
+  color: grey;
+  font-size: 14px;
+}
+
+.hour {
+  margin: 15px 10px  ;
+  color: grey;
+  float: right;
+  font-size: 14px;
+
+
+}
+
+
 
 
 .single-chat-1:hover{
