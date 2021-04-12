@@ -114,6 +114,21 @@ function initVue(){
 
     sendNewMsg: function(){
       //console.log(this.newMsg);
+
+            let newObj =
+            {
+              date: '10/01/2020 15:30:55',
+              text: '',
+              status: 'sent'
+            }
+           newObj.text = this.newMsg;
+           console.log(newObj);
+
+           
+
+            if (this.newMsg != ''){
+
+            }
       if (this.newMsg != ''){
       this
       }
