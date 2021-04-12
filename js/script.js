@@ -115,7 +115,7 @@ function initVue(){
     sendNewMsg: function(){
       //console.log(this.newMsg);
       if (this.newMsg != ''){
-
+      this
       }
     }
   }
