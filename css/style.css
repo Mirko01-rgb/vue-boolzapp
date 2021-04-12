@@ -45,7 +45,7 @@ ul{
 }
 
 .my-image{
-  height: 8%;
+  height: 11%;
   width: 100%;
   background-color: #D8DBD5;
   display: flex;
@@ -66,8 +66,8 @@ ul{
 }
 
 .container-photo .photo{
-  height: 85%;
-  width: 26%;
+  height: 76%;
+  width: 32%;
   /* background-color: green; */
   border-radius: 100%;
   background-image: url(../img/IMG_4906.jpg);
@@ -116,7 +116,7 @@ ul{
 
 
 .scroll-bar{
-  height: 75%;
+  height: 72%;
   width: 100%;
   /* background-color: red; */
   overflow-y: scroll;
@@ -170,7 +170,7 @@ img{
 
 
 
-.single-chat-1:hover{
+.single-chat-1:active{
   background-color: #D8DBD5;
 }
 
@@ -185,10 +185,25 @@ img{
 }
 
 .board-text-higher{
-  height: 8%;
+  height: 11%;
   width: 100%;
   background-color: #D8DBD5;
   border-left: 1px solid lightgrey;
+  padding-left: 20px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-img-name{
+  display: flex;
+  align-items: center;
+}
+.icons-board-text-higher i{
+  color: grey;
+  margin-left: 50px;
+
 }
 
 .board-text-lower{
@@ -212,7 +227,7 @@ img{
 }
 
 
-.destinatario{
+.received{
   background-color:white;
   padding: 15px;
   min-height: 40px;
@@ -222,13 +237,20 @@ img{
   margin: 10px 20px;
 }
 
-.mittente{
+.sent{
   float: right;
   clear: both;
   background-color: #dcf8c6;
   padding: 15px;
   min-height: 40px;
   border-radius: 12px;
-  margin-right: 20px;
+  margin: 10px 20px;
 
+}
+
+
+.hour-msg-sent{
+  color: grey;
+  font-size: 12px;
+  float: right;
 }

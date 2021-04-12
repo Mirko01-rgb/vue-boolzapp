@@ -54,8 +54,13 @@
             <!-- Scrollbar con tutte le chat -->
             <div class="scroll-bar">
               <ul>
-               <li v-for = "item in contacts">   <!-- item = i 4 oggetti dell'array CONTACTS  -->
-                  <div  class="single-chat-1 clearfix">
+                <!-- item = i 4 oggetti dell'array CONTACTS  -->
+               <li
+                @click= "contactClick(index)"
+                v-for = "(item, index) in contacts"
+
+                >
+                  <div class=" single-chat-1 clearfix">
                     <img :src='item.imagines' alt="foto">
                     <div class="name-chat">
 
@@ -84,13 +89,43 @@
           <div class="text-chat ">
 
             <!-- Bordo grigio superiore della chat -->
-            <div class="board-text-higher"></div>
+            <div class="board-text-higher">
+              <div class="container-img-name">
+                <img :src="contacts[activeIndex].imagines" alt="foto">
+                <h3>{{contacts[activeIndex].name}}</h3>
+              </div>
+
+              <div class="icons-board-text-higher">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-paperclip"></i>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
 
             <div class="chat">
-              <ul class="clearfix">
-                <li class="destinatario">Ciao</li>
-                <li class="mittente">Come stai?</li>
-                <li class="destinatario">Bene, tu?</li>
+
+              <ul>
+
+               <li
+                 v-for= "item in contacts[activeIndex].messages"
+                 :class="item.status"
+                 class="clearfix"
+                 >
+                 <p>{{item.text}}</p>
+                 <p class="hour-msg-sent">{{item.date}}</p>
+               </li>
+
+               <!-- <li class="received">
+                  <p>ciao</p>
+                  <p class="hour-msg-sent">12204</p>
+                </li>
+
+                 <li class="sent ">
+                  <p>Tutto bene, tu?</p>
+                  <p class="hour-msg-sent">11:43</p>
+
+                </li> -->
+
               </ul>
             </div>
 

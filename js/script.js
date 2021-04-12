@@ -2,6 +2,7 @@ function initVue(){
  new Vue({
    el: '#app',
    data : {
+     activeIndex:0,
      contacts: [
         {
             name: 'Michele',
@@ -100,7 +101,16 @@ function initVue(){
     ],
 
 
+
+
+
   },
+  methods: {
+    contactClick: function(index){
+      //console.log(index);
+         this.activeIndex = index;
+    }
+  }
 
 
 
