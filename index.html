@@ -58,9 +58,9 @@
                <li
                 @click= "contactClick(index)"
                 v-for = "(item, index) in contacts"
-
+                :class=" index == activeIndex ? 'active' : ''"
                 >
-                  <div class=" single-chat-1 clearfix">
+                  <div class=" single-chat-1  clearfix">
                     <img :src='item.imagines' alt="foto">
                     <div class="name-chat">
 
@@ -105,7 +105,7 @@
             <div class="chat">
 
               <ul>
-
+                <!-- aggiungi il valore della chiave Status: 'sent' o 'received' che sono uguali alle classi fatte (verdi e bianchi)  -->
                <li
                  v-for= "item in contacts[activeIndex].messages"
                  :class="item.status"
@@ -132,7 +132,8 @@
             <!-- Bordo grigio inferiore della chat con input-text  -->
             <div class="board-text-lower">
               <i style="color:grey" class="far fa-grin-alt"></i>
-              <input class="input-text-lower" type="text" placeholder="Type a message">
+              <input v-model="newMsg" @keyup.enter="sendNewMsg" class="input-text-lower" type="text" placeholder= "Type a message">
+              <i style="color:grey" @click= "sendNewMsg" class="fas fa-paper-plane"></i>
               <i style="color:grey" class="fas fa-microphone"></i>
 
             </div>

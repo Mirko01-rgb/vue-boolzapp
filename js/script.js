@@ -3,6 +3,7 @@ function initVue(){
    el: '#app',
    data : {
      activeIndex:0,
+     newMsg:'',
      contacts: [
         {
             name: 'Michele',
@@ -107,8 +108,15 @@ function initVue(){
   },
   methods: {
     contactClick: function(index){
-      //console.log(index);
+      console.log(index);
          this.activeIndex = index;
+    },
+
+    sendNewMsg: function(){
+      //console.log(this.newMsg);
+      if (this.newMsg != ''){
+
+      }
     }
   }
 

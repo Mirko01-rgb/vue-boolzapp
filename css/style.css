@@ -127,8 +127,7 @@ ul{
 .single-chat-1{
   height:15%;
   width: 100%;
-  background-color: white;
-  border: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 
 
 }
@@ -170,7 +169,7 @@ img{
 
 
 
-.single-chat-1:active{
+.active{
   background-color: #D8DBD5;
 }
 
