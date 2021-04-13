@@ -147,10 +147,27 @@ function initVue(){
         return(newObj);
       },
 
+      // searchContact: function(){
+      //   //console.log(this.searchText);
+      //
+      //   const resContacts = [];
+      //   for (let i = 0; i < this.contacts.length; i++) {
+      //     const contact = this.contacts[i];
+      //     //console.log(contact.name);
+      //     const singleNameContact = contact.name;
+      //     //console.log(singleNameContact);
+      //
+      //     if(singleNameContact.toLowerCase().includes(this.searchText.toLowerCase())){
+      //
+      //      resContacts.push(contact);
+      //     }
+      //   }
+      //   //console.log(resContacts);
+      //  return resContacts;
+      // }
+
       searchContact: function(){
         //console.log(this.searchText);
-
-        const resContacts = [];
         for (let i = 0; i < this.contacts.length; i++) {
           const contact = this.contacts[i];
           //console.log(contact.name);
@@ -159,11 +176,13 @@ function initVue(){
 
           if(singleNameContact.toLowerCase().includes(this.searchText.toLowerCase())){
 
-           resContacts.push(contact);
-          }
+           contact.visible= true;   //mostra solamente se è true,
+         }else{
+           contact.visible= false;
+         }
         }
         //console.log(resContacts);
-       return resContacts;
+
       }
     }
   });
