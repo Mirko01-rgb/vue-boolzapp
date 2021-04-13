@@ -47,7 +47,7 @@
 
             <!-- Input text per cercare le chat -->
             <div class="input-search flex">
-              <input v-model='searchText' type="text"   placeholder="Search of start new chat" >
+              <input v-model='searchText' type="text"  placeholder="Search of start new chat" >
             </div>
 
 
@@ -91,8 +91,8 @@
             <!-- Bordo grigio superiore della chat -->
             <div class="board-text-higher">
               <div class="container-img-name">
-                <img :src="contacts[activeIndex].imagines" alt="foto">
-                <h3>{{contacts[activeIndex].name}}</h3>
+                <img :src="searchContact()[activeIndex].imagines" alt="foto">
+                <h3>{{searchContact()[activeIndex].name}}</h3>
               </div>
 
               <div class="icons-board-text-higher">
@@ -107,7 +107,7 @@
               <ul>
                 <!-- aggiungi il valore della chiave Status: 'sent' o 'received' che sono uguali alle classi fatte (verdi e bianchi)  -->
                <li
-                 v-for= "item in contacts[activeIndex].messages"
+                 v-for= "item in searchContact()[activeIndex].messages"
                  :class="item.status"
                  class="clearfix"
                  >
