@@ -100,40 +100,45 @@ function initVue(){
             ],
         },
     ],
-
-
-
-
-
-  },
-  methods: {
-    contactClick: function(index){
-      console.log(index);
-         this.activeIndex = index;
     },
+    methods: {
+      contactClick: function(index){
+        console.log(index);
+           this.activeIndex = index;
+      },
 
-    sendNewMsg: function(){
-      //console.log(this.newMsg);
+      sendNewMsg: function(){
+        //console.log(this.newMsg);
+        const now = new Date();
+                const nowStr = now.getDate() + '/'
+                             + now.getMonth() + '/'
+                             + now.getFullYear() + ' '
+                             + now.getHours() + ':'
+                             + now.getMinutes();
+        let newObj =
+        {
+          date: nowStr,
+          text: this.newMsg,
+          status: 'sent'
+        }
 
-            let newObj =
-            {
-              date: '10/01/2020 15:30:55',
-              text: '',
-              status: 'sent'
-            }
-           newObj.text = this.newMsg;
-           console.log(newObj);
 
-           
 
-            if (this.newMsg != ''){
 
-            }
-      if (this.newMsg != ''){
-      this
+       this.contacts[this.activeIndex].messages.push(newObj)
+       this.newMsg= '';
+
+       this.sendAutoMsg();
+      },
+
+     sendAutoMsg : function(){
+
+       setTimeout(() => {
+
+         console.log('sendAutoMsg');
+        }, 1000)
       }
     }
-  }
 
 
 
