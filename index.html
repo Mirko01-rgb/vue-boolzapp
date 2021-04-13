@@ -47,7 +47,7 @@
 
             <!-- Input text per cercare le chat -->
             <div class="input-search flex">
-              <input  type="text"   placeholder="Search of start new chat" >
+              <input v-model='searchText' type="text"   placeholder="Search of start new chat" >
             </div>
 
 
@@ -57,7 +57,7 @@
                 <!-- item = i 4 oggetti dell'array CONTACTS  -->
                <li
                 @click= "contactClick(index)"
-                v-for = "(item, index) in contacts"
+                v-for = "(item, index) in searchContact()"
                 :class=" index == activeIndex ? 'active' : ''"
                 >
                   <div class=" single-chat-1  clearfix">

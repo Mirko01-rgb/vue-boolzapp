@@ -42,6 +42,7 @@ ul{
   background-size: cover;
   position: relative;
 
+
 }
 
 .my-image{
@@ -179,8 +180,11 @@ img{
   clear: both;
 }
 
-.chat ul{
-  width: 100%;
+.chat {
+
+  height: 78%;
+    overflow-Y: scroll;
+
 }
 
 .board-text-higher{
