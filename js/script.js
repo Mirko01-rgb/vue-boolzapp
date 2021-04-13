@@ -108,7 +108,28 @@ function initVue(){
       },
 
       sendNewMsg: function(){
-        //console.log(this.newMsg);
+
+       if (this.newMsg != '') {
+         const newMessages = this.getNewMessage(this.newMsg, 'sent');
+         this.contacts[this.activeIndex].messages.push(newMessages);
+         this.newMsg= '';
+
+         this.sendAutoMsg();
+       }
+      },
+
+     sendAutoMsg : function(){
+
+        const toReplayIndex = this.activeIndex;
+       setTimeout(() => {
+         //console.log('sendAutoMsg');
+         const newMessages = this.getNewMessage('OK', 'received');
+          this.contacts[toReplayIndex].messages.push(newMessages);
+
+        }, 1000)
+      },
+
+      getNewMessage: function(text, status){
         const now = new Date();
                 const nowStr = now.getDate() + '/'
                              + now.getMonth() + '/'
@@ -118,25 +139,11 @@ function initVue(){
         let newObj =
         {
           date: nowStr,
-          text: this.newMsg,
-          status: 'sent'
+          text: text,
+          status:  status
         }
 
-
-
-
-       this.contacts[this.activeIndex].messages.push(newObj)
-       this.newMsg= '';
-
-       this.sendAutoMsg();
-      },
-
-     sendAutoMsg : function(){
-
-       setTimeout(() => {
-
-         console.log('sendAutoMsg');
-        }, 1000)
+        return(newObj);
       }
     }
 
